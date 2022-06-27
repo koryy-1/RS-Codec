@@ -1,0 +1,1 @@
+%cd%\x64\Debug\RSCodec.exe 4 30 4 11001
