@@ -1,6 +1,6 @@
 # кодек Рида-Соломона
 
-представляет из себя программу, демонстрирующую работу кодирования и декодирования алгоритма Рида-Соломона
+представляет из себя программу, демонстрирующую работу кодирования и декодирования по алгоритму Рида-Соломона
 
 ## как запустить
 1) скачайте и разархивируйте codec for linux.zip либо codec for windows.zip 
@@ -52,7 +52,7 @@ int main()
         inf_data[i] = rand() % (n + 1);
     }
 
-    cout << "Results for encode data with Reed-Solomon code (n = " << n << ", k = " << k << ", t = " << t << ")" << endl << endl;
+    cout << "Results for encode data with Reed-Solomon code (n = 15, k = 9, t = 3)" << endl;
 
     // ввод данных inf_data и вывод битов четности b в полиномиальной форме
     encode_rs(inf_data, b);
@@ -105,7 +105,7 @@ int main()
     // формируем поле Галуа
     generate_gf(alpha_to, index_of);
 
-    cout << "Results for decode data with Reed-Solomon code (n = " << n << ", k = " << k << ", t = " << t << ")" << endl << endl;
+    cout << "Results for encode data with Reed-Solomon code (n = 15, k = 9, t = 3)" << endl;
 
     decode_rs(recd);
 
@@ -122,4 +122,4 @@ int main()
 }
 ```
 
-## программа написана на основе исходников из [статьи Криса Касперского](http://samag.ru/archive/article/211) и страницы [The Error Correcting Codes (ECC) Page](http://www.eccpage.com/)
+### алгоритм написан на основе исходников из [статьи Криса Касперского](http://samag.ru/archive/article/211) и страницы [The Error Correcting Codes (ECC) Page](http://www.eccpage.com/)
