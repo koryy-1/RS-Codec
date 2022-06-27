@@ -1,1 +1,1 @@
-%cd%\x64\Debug\RSCodec.exe 4 30 4 11001
+%cd%\x64\Debug\RSCodec.exe 3 20 4 11001
